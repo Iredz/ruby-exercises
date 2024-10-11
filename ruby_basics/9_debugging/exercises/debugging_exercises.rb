@@ -26,7 +26,7 @@ def increment_greatest_value(nested_array)
     array.each do |current_value|
       if greatest_value < nil
         greatest_value = current_value
-      end
+     end
     end
   end
   greatest_value += 1
