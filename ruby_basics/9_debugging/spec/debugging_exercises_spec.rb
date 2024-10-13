@@ -11,7 +11,7 @@ RSpec.describe 'Debugging Exercises' do
   end
 
   describe 'increment_greatest_value' do
-    xit 'Returns 5 after you use the stack trace to find and fix the error' do
+    it 'Returns 5 after you use the stack trace to find and fix the error' do
       nested_array = [[3, 4], [1, 2]]
       greatest_value_incremented = increment_greatest_value(nested_array)
       expect(greatest_value_incremented).to eq(5)
@@ -19,13 +19,13 @@ RSpec.describe 'Debugging Exercises' do
   end
 
   describe 'isogram' do
-    xit 'Returns true after you use puts to fix the method, since Odin is an isogram' do
+    it 'Returns true after you use puts to fix the method, since Odin is an isogram' do
       expect(isogram?("Odin")).to be true
     end
   end
 
   describe 'yell_greeting' do
-    xit 'Returns "WASSAP, BOB!" after you use pry-byebug to fix the method' do
+    it 'Returns "WASSAP, BOB!" after you use pry-byebug to fix the method' do
       expect(yell_greeting("Bob")).to eq("WASSAP, BOB!")
     end
   end
